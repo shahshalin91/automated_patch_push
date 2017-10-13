@@ -21,7 +21,7 @@ for ip in ips:
  	try:
  		pexpect.run(scp_cmd)
  		child = pexpect.spawn(scp_cmd)
-		child.expect('Password:')
+		child.expect(r'.*assword:')
 		child.sendline(password)
 		child.expect(pexpect.EOF,timeout=5)
 		output_lines = child.before
