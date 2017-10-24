@@ -41,6 +41,7 @@ Output
 shalin:Downloads shalin$ python security_patch_push.py 
 Username:cvpadmin
 Password:
+Extension file name:SecurityAdvisory0030-Hotfix.swix
 COPYING FILE SecurityAdvisory0030-Hotfix.swix TO SWITCH 10.20.30.6 
  Please wait for few secs.....
  
