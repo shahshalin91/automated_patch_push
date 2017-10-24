@@ -32,7 +32,7 @@ for ip in ips:
     print "COPYING FILE %s TO SWITCH %s SUCCESFUL" % (extension_file,ip)
   url = "http://%s:%s@%s/command-api" %(user,password,ip)
   copy_cmd = "copy flash:%s extension:" %(extension_file)
-  extension_cmd = "extension %s" % %(extension_file)
+  extension_cmd = "extension %s" %(extension_file)
   cmds = ["enable","configure",copy_cmd, extension_cmd, "copy installed-extensions boot-extensions"]
   try:
     switch = Server(url)
